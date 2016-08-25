@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EkiList</string>
+    <string name="action_settings">Settings</string>
+    <string name="color">Could not execute method for android:onClick</string>
+    <string name="emptyString"/>
+    <string name="save">Save</string>
+    <string name="write_your_text">Type your text!</string>
+    <string name="file_name">File Name</string>
+</resources>

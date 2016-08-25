@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/firstpage"
+                android:gravity="center"
+                android:nestedScrollingEnabled="true"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.ekilist.ekilist.EkiList"
+
+
+                tools:showIn="@layout/activity_eki_list"> >
+
+    <!-- <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:paddingBottom="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:background="@drawable/firstpage"
+        android:layout_gravity="center|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="63dp"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout> -->
+
+    <Button
+        android:id="@+id/createBtn"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="43dp"
+        android:background="#8ab6c8"
+        android:onClick="onClickButton"
+        android:text="Create Profile"
+        android:textColor="#070803"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/coupons"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/createBtn"
+        android:layout_alignStart="@+id/createBtn"
+        android:layout_below="@+id/createBtn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="53dp"
+        android:layout_weight="0.03"
+        android:background="#8ab6c8"
+        android:text="Coupons"
+        android:textColor="#070803"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="GET STARTED"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#092e84" />
+
+    <Button
+        android:id="@+id/shareBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/coupons"
+        android:layout_alignLeft="@+id/coupons"
+        android:layout_alignRight="@+id/coupons"
+        android:layout_alignStart="@+id/coupons"
+        android:layout_below="@+id/coupons"
+        android:layout_marginTop="44dp"
+        android:allowUndo="false"
+        android:background="#8ab6c8"
+        android:onClick="onClickButton"
+        android:text="Google +"
+        android:textColor="#070803"
+        android:textStyle="italic"
+        android:theme="@style/Animation.AppCompat.DropDownUp" />
+</RelativeLayout>

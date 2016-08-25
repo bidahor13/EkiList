@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/firstpage"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Login Page Activity has started"
+        android:id="@+id/textView2"
+        android:layout_weight="0.16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:id="@+id/UN"
+        android:textSize="20dp"
+        android:layout_weight="0.03"
+        android:layout_gravity="bottom"
+        android:textColor="#FF192A63" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/TFusername" />
+
+    <TextView
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Password"
+        android:id="@+id/textView3"
+        android:textColor="#FF192A63"
+        android:layout_weight="0.05"
+        android:layout_gravity="bottom" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:ems="10"
+        android:id="@+id/TFpassword" />
+
+    <Button
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FF192A63"
+        android:id="@+id/logbutton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onButtonClickLogin" />
+
+    <Button
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up Here"
+        android:textColor="#FF192A63"
+        android:id="@+id/Bsignup"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClickButton2" />
+
+</LinearLayout>

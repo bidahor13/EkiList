@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#0000FF"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:text="Welcome"
+            android:layout_marginRight="0dp"
+           android:id="@+id/textView5"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open map"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:nestedScrollingEnabled="false"
+            android:onClick="onOpenMapClick" />
+    </LinearLayout>
+
+    <!--android:layout_weight="0.07" -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/emptyString"
+        android:id="@+id/textView_newList"
+        android:layout_weight="0.55"
+        android:layout_gravity="top" />
+
+    <!-- displays the name of the user after logging in-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editTextToDo" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLines="1"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+        android:layout_gravity="center"
+
+
+           <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item"
+            android:onClick="onAddItemClick"
+            android:id="@+id/buttonAddClick" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewToDo"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
