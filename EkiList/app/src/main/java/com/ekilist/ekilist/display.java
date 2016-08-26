@@ -37,7 +37,6 @@ public class display extends Activity {
     } */
 
 
-
     /* Button for the login on login_display.xml */
     public void onButtonClickLogin(View v) {
         if (v.getId() == R.id.logbutton)
